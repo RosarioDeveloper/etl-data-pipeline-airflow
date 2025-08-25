@@ -1,0 +1,27 @@
+# Airflow and ETL project ignores
+airflow.db
+config/airflow.db/
+config/airflow.cfg
+logs/
+dags/__pycache__/
+dags/*.csv
+dags/*.tsv
+dags/*.txt
+dags/staging/
+plugins/__pycache__/
+__pycache__/
+.env
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# VS Code
+.vscode/
+# Screenshot and output
+screenshot/
+*.jpg
