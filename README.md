@@ -27,6 +27,30 @@ The DAG `ETL_toll_data` runs daily and consists of the following tasks:
    ```
 4. Access the Airflow UI at `http://localhost:8080` and trigger the `ETL_toll_data` DAG.
 
+## Airflow CLI Commands
+Run these commands inside the Airflow container:
+
+- **List all DAGs:**
+  ```zsh
+  airflow dags list
+  ```
+- **Show details of a DAG:**
+  ```zsh
+  airflow dags show ETL_toll_data
+  ```
+- **List active DAGs:**
+  ```zsh
+  airflow dags list --active
+  ```
+- **Trigger (run) a DAG manually:**
+  ```zsh
+  airflow dags trigger ETL_toll_data
+  ```
+- **Check DAG run status:**
+  ```zsh
+  airflow dags list-runs -d ETL_toll_data
+  ```
+
 ## Output
 - Transformed data is saved in `dags/staging/transformed_data.csv`.
 - Intermediate files are created in the `dags/` directory.
